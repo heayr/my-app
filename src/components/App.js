@@ -61,14 +61,14 @@ class TodoList extends React.Component {
     })
   };
 
-  onRemoveTodo = (todoName) => {
+  onRemoveTodo = (name) => {
     // this.setState(prevState => ({
     //   elements: prevState.elements.filter(item => item.name !== item.name)
     // }));
 
     const { elements } = this.state;
 
-    const todoIndex = elements.findIndex((str) => str === todoName);
+    const todoIndex = elements.findIndex((str) => str === name);
     console.log('индекс', todoIndex);
 
 
